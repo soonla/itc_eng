@@ -1,0 +1,180 @@
+main {
+  #mainVisual {
+    overflow: hidden;
+    position: relative;
+    ul {
+      li {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        &.visual01 {
+          background-image: url("../images/images/main/bg-02\ -\ 복사본.jpg");
+        }
+        &.visual02 {
+          background-image: url("../images/images/main/main-visual03.jpg");
+        }
+        &.visual03 {
+          background-image: url("../images/images/main/main-visual02.jpg");
+        }
+      }
+    }
+    .slogan {
+      position: absolute;
+      z-index: 3;
+      top: 75%;
+      left: 70%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      .main {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+      }
+    }
+    button {
+      position: absolute;
+      top: 50%;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 4;
+      color: #fff;
+      cursor: pointer;
+      &.prev {
+        left: 0;
+      }
+      &.next {
+        right: 0;
+      }
+    }
+  }
+  .school_container {
+    .school_wrap {
+    }
+    .where {
+      .where_wrap {
+        width: 1200px;
+        margin: 0 auto;
+        .txt_box {
+          margin-top: 100px;
+          h4 {
+            text-align: flex-start;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 1.6;
+          }
+        }
+        .where_img {
+          height: 500px;
+          ul {
+            display: flex;
+            justify-content: center;
+            margin-top: -80px;
+            li {
+              width: 400px;
+              text-align: center;
+              border: 1px solid #111;
+              border-radius: 25px;
+              margin: 20px;
+              background-color: #f5f5f5;
+              &.first {
+                height: 300px;
+                margin-top: 150px;
+              }
+              &.second {
+                height: 300px;
+              }
+              &.third {
+                height: 300px;
+                margin-top: 150px;
+              }
+              img {
+                width: 50%;
+                margin: 40px 0 20px 0;
+                height: 120px;
+              }
+              .top {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 2.5;
+              }
+              .bottom {
+                font-weight: 500;
+                font-size: 18px;
+                margin-bottom: 30px;
+              }
+            }
+            :hover {
+              background-color: red;
+            }
+          }
+        }
+      }
+      .answer {
+        .answer_wrap {
+          width: 1200px;
+          margin: 0 auto;
+          border-top: 1px solid red;
+
+          .txt_box {
+            margin: 50px 0 50px 0;
+            line-height: 1.4;
+            h4 {
+              font-size: 36px;
+              font-weight: 600;
+              margin-bottom: 20px;
+            }
+            div {
+              border: 1px solid #000;
+
+              p {
+                font-size: 32px;
+                display: flex;
+              }
+              img {
+                display: inline-block;
+              }
+            }
+          }
+          .txt_wrap {
+            padding: 40px;
+
+            ul {
+              li {
+                display: flex;
+                padding: 30px;
+                background-color: #f5f5f5;
+
+                .talk {
+                  line-height: 2;
+                  h4 {
+                    font-size: 36px;
+                    line-height: 3.5;
+                  }
+                  h5 {
+                    font-size: 32px;
+                  }
+                  p {
+                    font-size: 28px;
+                  }
+                }
+                .img {
+                  img {
+                    width: 400px;
+                    margin: 50px 0 0 100px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
