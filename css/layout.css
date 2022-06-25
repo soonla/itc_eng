@@ -40,7 +40,7 @@ img { vertical-align: top; }
 
 #header .container #gnb .list > li:hover .depth02 { background-color: #0c8baf; }
 
-#header .container #gnb .list > li .depth02 { background-color: #0c8baf; padding: 20px 10px; border-radius: 0 0 15px 15px; display: none; }
+#header .container #gnb .list > li .depth02 { background-color: #0c8baf; padding: 20px 10px; border-radius: 0 0 15px 15px; display: none; font-weight: 400; font-size: 18px; }
 
 #header .container #gnb .list > li .depth02 li a { display: block; padding: 10px 0; }
 
@@ -84,7 +84,11 @@ img { vertical-align: top; }
 
 #footer .addressBox .address .copyright { margin-top: 30px; }
 
-#footer .addressBox .family_site { margin-left: auto; }
+#footer .addressBox .snsbox { margin-left: auto; }
+
+#footer .addressBox .snsbox a .sns03 { width: 40px; height: 40px; -webkit-transition: background-image 0.45s ease; transition: background-image 0.45s ease; background-size: 100%; background-position: center; background-repeat: no-repeat; }
+
+#footer .addressBox .snsbox a :hover { background-color: #666; border-radius: 50px; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
 
 div .btnTop { background-color: #0c8baf; width: 50px; height: 50px; position: fixed; right: 31px; bottom: 90px; border-radius: 25px; color: #fff; z-index: 10; -webkit-transition: 0.5s ease; transition: 0.5s ease; }
 

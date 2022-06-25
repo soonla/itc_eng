@@ -25,7 +25,7 @@
 
 #main #mainVisual .visual_box .list_wrap li a dl dd { margin-left: 10px; font-size: 36px; color: #fff; line-height: 1; letter-spacing: -0.075em; }
 
-#main #mainVisual .visual_box .list_wrap li:hover { background-color: skyblue; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
+#main #mainVisual .visual_box .list_wrap li:hover { background-image: url(../images/images/main/doctor.png); background-position: right bottom; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; bottom: 20px; background-size: contain; background-color: #00aaff; }
 
 #main .introduce { width: 100%; background-color: #f4f7ff; }
 
@@ -41,7 +41,7 @@
 
 #main .introduce .with_itc .inner .tab_box .tab .txt_box h4 { font-size: 18px; }
 
-#main .introduce .with_itc .inner .tab_box .tab .txt_box h2 { margin-top: 20px; font-size: 36px; font-weight: 600; }
+#main .introduce .with_itc .inner .tab_box .tab .txt_box h2 { margin-top: 20px; font-size: 32px; font-weight: 600; }
 
 #main .introduce .with_itc .inner .tab_box .tab .btn button { margin: 30px 0 0 40px; width: 100px; height: 100px; border: 1px solid #999; border-radius: 50%; background-color: #eee; color: #111; font-weight: 700; font-size: 20px; }
 
@@ -61,15 +61,17 @@
 
 #main .introduce .with_itc .inner .view_box ul li .wrap .up_box { font-size: 36px; }
 
-#main .introduce .with_itc .inner .view_box ul li .wrap .down_box h4 { font-size: 24px; margin-top: 20px; text-align: center; }
+#main .introduce .with_itc .inner .view_box ul li .wrap .up_box .under_box { display: inline-block; margin-bottom: 20px; float: right; }
 
-#main .introduce .with_itc .inner .view_box ul li .wrap .down_box .under_box { margin-top: 250px; float: right; }
+#main .introduce .with_itc .inner .view_box ul li .wrap .up_box .under_box a { border: 3px solid #fff; border-radius: 25px; padding: 10px; color: #fff; font-size: 18px; }
 
-#main .introduce .with_itc .inner .view_box ul li .wrap .down_box .under_box a { border: 1px solid #fff; border-radius: 25px; padding: 20px; color: #fff; }
+#main .introduce .with_itc .inner .view_box ul li .wrap .up_box .under_box a span { vertical-align: top; margin-top: 10px; }
 
-#main .introduce .with_itc .inner .view_box ul li .wrap .down_box .under_box a span { vertical-align: middle; margin-bottom: 5px; }
+#main .introduce .with_itc .inner .view_box ul li .wrap .up_box .under_box :hover { background-color: #fff; color: #000; }
 
-#main .introduce .with_itc .inner .view_box ul li .wrap .down_box .under_box :hover { background-color: #fff; color: #000; }
+#main .introduce .with_itc .inner .view_box ul li .wrap .down_box { width: 400px; float: right; }
+
+#main .introduce .with_itc .inner .view_box ul li .wrap .down_box h4 { font-size: 24px; margin: 50px 0 0 200px; text-align: flex-start; word-break: keep-all; }
 
 #main .notice_wrap { width: 1200px; margin: 80px auto 120px; height: 300px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -166,6 +168,8 @@
 #main #recruit .wrap .document_box .document ul li .partner hr { margin: 20px; }
 
 #main #recruit .wrap .document_box .document ul li .partner .button a { margin-right: 10px; border: 1px solid #fff; border-radius: 25px; padding: 15px; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; background-color: #f1f1f1; }
+
+#main #recruit .wrap .document_box .document ul li .partner .button :hover { background-color: #6fbe46; color: #fff; }
 
 @-webkit-keyframes iconAni { 0% { -webkit-transform: translateY(0); transform: translateY(0); }
   100% { -webkit-transform: translateY(10px); transform: translateY(10px); } }

@@ -114,7 +114,9 @@ img {
             padding: 20px 10px;
             border-radius: 0 0 15px 15px;
             display: none;
-            //height: 400px;
+            font-weight: 400;
+            font-size: 18px;
+            // height: 400px;
             li {
               a {
                 display: block;
@@ -223,8 +225,24 @@ img {
         margin-top: 30px;
       }
     }
-    .family_site {
+    .snsbox {
       margin-left: auto;
+      a {
+        .sns03 {
+          width: 40px;
+          height: 40px;
+          transition: background-image 0.45s ease;
+          background-size: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        :hover {
+          background-color: #666;
+          border-radius: 50px;
+          transition: all 0.25s ease;
+        }
+      }
     }
   }
 }

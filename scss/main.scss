@@ -85,8 +85,12 @@
             }
           }
           &:hover {
-            background-color: skyblue;
+            background-image: url(../images/images/main/doctor.png);
+            background-position: right bottom;
             transition: all 0.25s ease;
+            bottom: 20px;
+            background-size: contain;
+            background-color: #00aaff;
           }
         }
       }
@@ -120,7 +124,7 @@
               }
               h2 {
                 margin-top: 20px;
-                font-size: 36px;
+                font-size: 32px;
                 font-weight: 600;
               }
             }
@@ -176,31 +180,36 @@
                 margin: 70px 30px 0 30px;
                 .up_box {
                   font-size: 36px;
-                }
-                .down_box {
-                  h4 {
-                    font-size: 24px;
-
-                    margin-top: 20px;
-                    text-align: center;
-                  }
                   .under_box {
-                    margin-top: 250px;
+                    display: inline-block;
+                    margin-bottom: 20px;
                     float: right;
                     a {
-                      border: 1px solid #fff;
+                      border: 3px solid #fff;
                       border-radius: 25px;
-                      padding: 20px;
+                      padding: 10px;
                       color: #fff;
+                      font-size: 18px;
+
                       span {
-                        vertical-align: middle;
-                        margin-bottom: 5px;
+                        vertical-align: top;
+                        margin-top: 10px;
                       }
                     }
                     :hover {
                       background-color: #fff;
                       color: #000;
                     }
+                  }
+                }
+                .down_box {
+                  width: 400px;
+                  float: right;
+                  h4 {
+                    font-size: 24px;
+                    margin: 50px 0 0 200px;
+                    text-align: flex-start;
+                    word-break: keep-all;
                   }
                 }
               }
@@ -466,9 +475,11 @@
               .partner {
                 padding: 31px;
                 border-radius: 25px 25px 0 0;
+
                 div {
                   display: flex;
                   width: 100%;
+
                   p {
                     margin-bottom: 60px;
                     font-size: 24px;
@@ -493,6 +504,10 @@
                     padding: 15px;
                     transition: all 0.25s ease;
                     background-color: #f1f1f1;
+                  }
+                  :hover {
+                    background-color: #6fbe46;
+                    color: #fff;
                   }
                 }
               }
