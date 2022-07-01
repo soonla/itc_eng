@@ -1,278 +1,411 @@
-<? include("../include/index.header.html"); ?>
-<main id="main">
-  <div class="container">
-    <div id="mainVisual">
-      <ul class="swiper-wrapper">
-        <li class="visual01 swiper-slide"></li>
-        <li class="visual02 swiper-slide"></li>
-        <li class="visual03 swiper-slide"></li>
-      </ul>
-      <div class="slogan">
-        <p class="main" data-splitting>읽히는 영어</p>
-        <p class="main" data-splitting>나오는 영어</p>
-        <p class="main" data-splitting>입으로 영어</p>
-      </div>
-      <div class="visual_box">
-        <ul class="list_wrap">
-          <li class="visual_01">
-            <a href="">
-              <dl>
-                <dt><em>01</em> &nbsp;|</dt>
-                <dd>방문모의수업 신청</dd>
-              </dl>
-            </a>
-          </li>
-          <li class="visual_02">
-            <a href="">
-              <dl>
-                <dt><em>02</em> &nbsp;|</dt>
-                <dd>통역스쿨 무료체험</dd>
-              </dl>
-            </a>
-          </li>
-          <li class="visual_03">
-            <a href="">
-              <dl>
-                <dt><em>03</em> &nbsp;|</dt>
-                <dd>화상모의 수업신청</dd>
-              </dl>
-            </a>
-          </li>
-          <li class="visual_04">
-            <a href="">
-              <dl>
-                <dt><em>04</em> &nbsp;|</dt>
-                <dd>원격지원</dd>
-              </dl>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <article class="introduce">
-      <div class="with_itc">
-        <div class="inner">
-          <div class="margin"></div>
-          <div class="tab_box">
-            <div class="tab" data-aos="fade-up">
-              <div class="txt_box">
-                <h4>입이기억하는 영어</h4>
-                <h2>ITC영어</h2>
-                <h2>브랜드를 소개합니다!</h2>
-              </div>
-              <div class="btn">
-                <button type="button" class="prev"><span><</span></button>
-                <button type="button" class="next"><span>></span></button>
-              </div>
-            </div>
-            <div class="view_box">
-              <ul class="swiper-wrapper">
-                <li class="introduce_01 swiper-slide">
-                  <div class="wrap">
-                    <div class="up_box">
-                      <span>ITC통역대학</span>
-                      <div class="under_box">
-                        <a href=""
-                          >더 보기&nbsp;
-                          <span class="material-icons">east</span>
-                        </a>
-                      </div>
-                    </div>
-                    <hr />
-                    <div class="down_box">
-                      <h4>
-                        ITC 통역대학에서는 통역기법 훈련 뿐만 아니라 정치, 경제, 사회, 문화 등의 폭넓은 지식을 배웁니다. 뿐만 아니라, 토론을 통해 생각하는 능력을 향상시켜 사고력과 비판력을 키웁니다.
-                      </h4>
-                    </div>
-                  </div>
-                </li>
-                <li class="introduce_02 swiper-slide">
-                  <div class="wrap">
-                    <div class="up_box">
-                      <span>ITC통역대학</span>
-                      <div class="under_box">
-                        <a href=""
-                          >더 보기&nbsp;
-                          <span class="material-icons">east</span>
-                        </a>
-                      </div>
-                    </div>
-                    <hr />
-                    <div class="down_box">
-                      <h4>
-                        ITC 통역대학에서는 통역기법 훈련 뿐만 아니라 정치, 경제, 사회, 문화 등의 폭넓은 지식을 배웁니다. 뿐만 아니라, 토론을 통해 생각하는 능력을 향상시켜 사고력과 비판력을 키웁니다.
-                      </h4>
-                    </div>
-                  </div>
-                </li>
-                <li class="introduce_03 swiper-slide">
-                  <div class="wrap">
-                    <div class="up_box">
-                      <span>ITC통역대학</span>
-                      <div class="under_box">
-                        <a href=""
-                          >더 보기&nbsp;
-                          <span class="material-icons">east</span>
-                        </a>
-                      </div>
-                    </div>
-                    <hr />
-                    <div class="down_box">
-                      <h4>
-                        ITC 통역대학에서는 통역기법 훈련 뿐만 아니라 정치, 경제, 사회, 문화 등의 폭넓은 지식을 배웁니다. 뿐만 아니라, 토론을 통해 생각하는 능력을 향상시켜 사고력과 비판력을 키웁니다.
-                      </h4>
-                    </div>
-                  </div>
-                </li>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITC교육</title>
+    <link rel="shortcut icon" href="../images/images/header/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.css" />
+    <link rel="stylesheet" href="../css/splitting.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/event.css" />
+    <link rel="stylesheet" href="../css/introduce.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0a8cf008a6167b3310cdcd5642c0b1fb&libraries=services"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/gsap/gsap.min.js"></script>
+    <script src="../js/splitting.min.js"></script>
+    <script src="../js/js.cookie.min.js"></script>
+    <!-- <script src="../js/main.js" defer></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/jquery_main.js" defer></script>
+  </head>
+  <body>
+    <script>
+      AOS.init();
+    </script>
+    <header id="header">
+      <div class="container">
+        <h1 id="logo">
+          <a href="./"><img src="../images/images/header/logo.png" alt="" /></a>
+        </h1>
+        <nav id="gnb">
+          <ul class="list">
+            <li>
+              <a href="">회사소개</a>
+              <ul class="depth02">
+                <li><a href="../html/introduce_history.html">주요 연혁</a></li>
+                <li><a href="../html/introduce_business.html">사업 영역</a></li>
+                <li><a href="../html/introduce_contribution.html">사회 공헌</a></li>
               </ul>
-            </div>
-          </div>
+            </li>
+            <li>
+              <a href="">ITC교수법</a>
+              <ul class="depth02">
+                <li><a href="../html/method_phillosophy.html">교육 철학</a></li>
+                <li><a href="../html/method_effect.html">교육 효과</a></li>
+                <li><a href="../html/method_method.html">교수법</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">ITC브랜드</a>
+              <ul class="depth02">
+                <li><a href="./index.html">ITC교육</a></li>
+                <li><a href="./brand_school.html">통역스쿨</a></li>
+                <li><a href="./brand_college.html">통역대학</a></li>
+                <li><a href="./brand_language.html">어학연수</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">지점안내</a>
+              <ul class="depth02">
+                <li><a href="./brand_franchise.html">가맹점 모집</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">채용정보</a>
+              <ul class="depth02">
+                <li><a href="">인재상</a></li>
+                <li><a href="">채용공고</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- gnb end -->
+        <div class="etc">
+          <a href="" class="btn online">로그인</a>
+          <button class="all">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
-    </article>
-    <article class="notice_wrap" data-aos="fade-up">
-      <div class="notice">
-        <div class="main">
-          <h2>공지사항 / 이벤트</h2>
-          <a href="./index_event01.html">
-            <img src="../images/images/main/ico_more.png" alt="" />
-          </a>
-        </div>
-        <div class="sub">
-          <ul>
-            <li>
-              <a href="">
-                <span class="title">
-                  <em>공지</em>
-                  공지사항2 입니다.
-                </span>
-                <span class="date">2022-06-24</span>
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="">
-                <span class="title">
-                  <em>이벤트</em>
-                  이벤트2 입니다.
-                </span>
-                <span class="date">2022-06-23</span>
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="">
-                <span class="title">
-                  <em>공지</em>
-                  공지사항1 입니다.
-                </span>
-                <span class="date">2022-06-22</span>
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="">
-                <span class="title">
-                  <em>이벤트</em>
-                  이벤트1 입니다.
-                </span>
-                <span class="date">2022-06-21</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="customer_center">
-        <div class="main">
-          <h2>고객센터</h2>
-          <a href="">
-            <img src="../images/images/main/ico_more.png" alt="" />
-          </a>
-        </div>
-        <div class="tel_box">
-          <span class="tel_up">
-            <strong>1599-0205</strong>
-            평일 : 13:00 ~ 21:00 <br />
-            일요일/공휴일 휴무
-          </span>
-          <div class="support">
-            <div class="consult">
-              <a href="">
-                <img src="../images/images/main/customer-ico01.png" alt="" />
-                <span>상담하기</span>
-              </a>
-            </div>
-            <div class="consult">
-              <a href="">
-                <img src="../images/images/main/customer-ico02.png" alt="" />
-                <span>자주하는 질문</span>
-              </a>
-            </div>
-            <div class="consult">
-              <a href="">
-                <img src="../images/images/main/customer-ico04.png" alt="" />
-                <span>지점안내</span>
-              </a>
-            </div>
-            <div class="consult">
-              <a href="">
-                <img src="../images/images/main/customer-ico03.png" alt="" />
-                <span>원격지원</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
+    </header>
+    <!-- header end -->
 
-    <article id="recruit" class="contentsBox">
-      <div class="wrap" data-aos="fade-up">
-        <div class="titleBox">
-          <h2>Recruit & Partner</h2>
-          <p class="top">함께, 더 멀리 나아갑니다.</p>
-          <p class="bottom">채용 & 사업제휴</p>
-        </div>
-        <div class="document_box">
-          <div class="document">
-            <ul>
-              <li>
-                <div class="recruit">
-                  <div>
-                    <p>RECRUIT</p>
-                    <span>어제와 다른 오늘, <br />ITC에서 여러분을 기다리고 있습니다.</span>
-                  </div>
-                  <hr />
-                  <div class="button">
-                    <a href="">직원 채용</a>
-                    <a href="">선생님 채용</a>
-                  </div>
-                </div>
+    <main id="main">
+      <div class="container">
+        <div id="mainVisual">
+          <ul class="swiper-wrapper">
+            <li class="visual01 swiper-slide"></li>
+            <li class="visual02 swiper-slide"></li>
+            <li class="visual03 swiper-slide"></li>
+          </ul>
+          <div class="slogan">
+            <p class="main" data-splitting>읽히는 영어</p>
+            <p class="main" data-splitting>나오는 영어</p>
+            <p class="main" data-splitting>입으로 영어</p>
+          </div>
+          <div class="visual_box">
+            <ul class="list_wrap">
+              <li class="visual_01">
+                <a href="">
+                  <dl>
+                    <dt><em>01</em> &nbsp;|</dt>
+                    <dd>방문모의수업 신청</dd>
+                  </dl>
+                </a>
               </li>
-              <li>
-                <div class="partner">
-                  <div>
-                    <p>PARTNER</p>
-                    <span
-                      >새로운 교육 생태계를 만들어 갈 <br />
-                      파트너를 모십니다.</span
-                    >
-                  </div>
-                  <hr />
-
-                  <div class="button">
-                    <a href="">가맹 문의</a>
-                  </div>
-                </div>
+              <li class="visual_02">
+                <a href="">
+                  <dl>
+                    <dt><em>02</em> &nbsp;|</dt>
+                    <dd>통역스쿨 무료체험</dd>
+                  </dl>
+                </a>
+              </li>
+              <li class="visual_03">
+                <a href="">
+                  <dl>
+                    <dt><em>03</em> &nbsp;|</dt>
+                    <dd>화상모의 수업신청</dd>
+                  </dl>
+                </a>
+              </li>
+              <li class="visual_04">
+                <a href="">
+                  <dl>
+                    <dt><em>04</em> &nbsp;|</dt>
+                    <dd>원격지원</dd>
+                  </dl>
+                </a>
               </li>
             </ul>
           </div>
         </div>
+        <article class="introduce">
+          <div class="with_itc">
+            <div class="inner">
+              <div class="margin"></div>
+              <div class="tab_box">
+                <div class="tab" data-aos="fade-up">
+                  <div class="txt_box">
+                    <h4>입이기억하는 영어</h4>
+                    <h2>ITC영어</h2>
+                    <h2>브랜드를 소개합니다!</h2>
+                  </div>
+                  <div class="btn">
+                    <button type="button" class="prev"><span><</span></button>
+                    <button type="button" class="next"><span>></span></button>
+                  </div>
+                </div>
+                <div class="view_box">
+                  <ul class="swiper-wrapper">
+                    <li class="introduce_01 swiper-slide">
+                      <div class="wrap">
+                        <div class="up_box">
+                          <span>ITC통역대학</span>
+                          <div class="under_box">
+                            <a href=""
+                              >더 보기&nbsp;
+                              <span class="material-icons">east</span>
+                            </a>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="down_box">
+                          <h4>
+                            ITC 통역대학에서는 통역기법 훈련 뿐만 아니라 정치, 경제, 사회, 문화 등의 폭넓은 지식을 배웁니다. 뿐만 아니라, 토론을 통해 생각하는 능력을 향상시켜 사고력과 비판력을
+                            키웁니다.
+                          </h4>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="introduce_02 swiper-slide">
+                      <div class="wrap">
+                        <div class="up_box">
+                          <span>ITC통역대학</span>
+                          <div class="under_box">
+                            <a href=""
+                              >더 보기&nbsp;
+                              <span class="material-icons">east</span>
+                            </a>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="down_box">
+                          <h4>
+                            ITC 통역대학에서는 통역기법 훈련 뿐만 아니라 정치, 경제, 사회, 문화 등의 폭넓은 지식을 배웁니다. 뿐만 아니라, 토론을 통해 생각하는 능력을 향상시켜 사고력과 비판력을
+                            키웁니다.
+                          </h4>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="introduce_03 swiper-slide">
+                      <div class="wrap">
+                        <div class="up_box">
+                          <span>ITC통역대학</span>
+                          <div class="under_box">
+                            <a href=""
+                              >더 보기&nbsp;
+                              <span class="material-icons">east</span>
+                            </a>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="down_box">
+                          <h4>
+                            ITC 통역대학에서는 통역기법 훈련 뿐만 아니라 정치, 경제, 사회, 문화 등의 폭넓은 지식을 배웁니다. 뿐만 아니라, 토론을 통해 생각하는 능력을 향상시켜 사고력과 비판력을
+                            키웁니다.
+                          </h4>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="notice_wrap" data-aos="fade-up">
+          <div class="notice">
+            <div class="main">
+              <h2>공지사항 / 이벤트</h2>
+              <a href="./index_event01.html">
+                <img src="../images/images/main/ico_more.png" alt="" />
+              </a>
+            </div>
+            <div class="sub">
+              <ul>
+                <li>
+                  <a href="">
+                    <span class="title">
+                      <em>공지</em>
+                      공지사항2 입니다.
+                    </span>
+                    <span class="date">2022-06-24</span>
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="">
+                    <span class="title">
+                      <em>이벤트</em>
+                      이벤트2 입니다.
+                    </span>
+                    <span class="date">2022-06-23</span>
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="">
+                    <span class="title">
+                      <em>공지</em>
+                      공지사항1 입니다.
+                    </span>
+                    <span class="date">2022-06-22</span>
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="">
+                    <span class="title">
+                      <em>이벤트</em>
+                      이벤트1 입니다.
+                    </span>
+                    <span class="date">2022-06-21</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="customer_center">
+            <div class="main">
+              <h2>고객센터</h2>
+              <a href="">
+                <img src="../images/images/main/ico_more.png" alt="" />
+              </a>
+            </div>
+            <div class="tel_box">
+              <span class="tel_up">
+                <strong>1599-0205</strong>
+                평일 : 13:00 ~ 21:00 <br />
+                일요일/공휴일 휴무
+              </span>
+              <div class="support">
+                <div class="consult">
+                  <a href="">
+                    <img src="../images/images/main/customer-ico01.png" alt="" />
+                    <span>상담하기</span>
+                  </a>
+                </div>
+                <div class="consult">
+                  <a href="">
+                    <img src="../images/images/main/customer-ico02.png" alt="" />
+                    <span>자주하는 질문</span>
+                  </a>
+                </div>
+                <div class="consult">
+                  <a href="">
+                    <img src="../images/images/main/customer-ico04.png" alt="" />
+                    <span>지점안내</span>
+                  </a>
+                </div>
+                <div class="consult">
+                  <a href="">
+                    <img src="../images/images/main/customer-ico03.png" alt="" />
+                    <span>원격지원</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article id="recruit" class="contentsBox">
+          <div class="wrap" data-aos="fade-up">
+            <div class="titleBox">
+              <h2>Recruit & Partner</h2>
+              <p class="top">함께, 더 멀리 나아갑니다.</p>
+              <p class="bottom">채용 & 사업제휴</p>
+            </div>
+            <div class="document_box">
+              <div class="document">
+                <ul>
+                  <li>
+                    <div class="recruit">
+                      <div>
+                        <p>RECRUIT</p>
+                        <span>어제와 다른 오늘, <br />ITC에서 여러분을 기다리고 있습니다.</span>
+                      </div>
+                      <hr />
+                      <div class="button">
+                        <a href="">직원 채용</a>
+                        <a href="">선생님 채용</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="partner">
+                      <div>
+                        <p>PARTNER</p>
+                        <span
+                          >새로운 교육 생태계를 만들어 갈 <br />
+                          파트너를 모십니다.</span
+                        >
+                      </div>
+                      <hr />
+
+                      <div class="button">
+                        <a href="">가맹 문의</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
-    </article>
-  </div>
-</main>
-<!-- main end -->
-<? include("../include/index.footer.html"); ?>
+    </main>
+    <!-- main end -->
+    <footer id="footer">
+      <div class="addressBox">
+        <div class="logo">
+          <img src="../images/images/footer/logo-footer.png" alt="" />
+        </div>
+        <div class="address">
+          <p>
+            (주)아이티씨교육 | 주소 : 경기도 화성시 동탄첨단산업1로 27 금강펜테리움IX타워 A동 1911호 | 고객센터 : <a href="tel:1599-0205">1599-0205</a>
+            <br />
+            대표 : 윤성희 | 통신판매사업신고번호 : 제 2021-화성동탄-1839 호 |사업자등록번호 : 120-87-80731<br />
+            원격평생교육시설신고 : 제10090호 | 개인정보관리책임자 : 김경숙 <a href="mailto:kks@itcenglish.com"><strong>kks@itcenglish.com</strong></a>
+          </p>
+          <p class="copyright">COPYRIGHT ©아이티씨교육 All Rights Reserverd.</p>
+          <a href=""><img src="" alt="" /></a>
+        </div>
+        <div class="snsbox">
+          <a href="https://blog.naver.com/itcschool">
+            <img class="sns01" src="../images/images/footer/f_blog01.png" alt="" />
+          </a>
+
+          <a href="https://cafe.naver.com/loveitc"><img class="sns02" src="../images/images/footer/f_cafe01.png" alt="" /></a>
+          <a href="https://www.facebook.com/loveITC"><img class="sns03" src="../images/images/footer/f_facebook01.png" alt="" /></a>
+          <a href="https://story.kakao.com/ch/itcschool/feed">
+            <img class="sns04" src="../images/images/footer/f_kakao01.png" alt="" />
+          </a>
+          <a href="https://www.youtube.com/c/ITC%EA%B5%90%EC%9C%A1">
+            <img class="sns05" src="../images/images/footer/f_you01.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div>
+      <button class="btnTop">
+        <span class="material-icons">north</span>
+      </button>
+    </div>
+  </body>
+</html>
