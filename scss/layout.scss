@@ -76,7 +76,6 @@ img {
           position: relative;
           > a {
             font-size: 20px;
-            text-transform: capitalize;
             font-weight: 500;
             display: flex;
             justify-content: center;
@@ -138,13 +137,22 @@ img {
       display: flex;
       align-items: center;
       .online {
-        padding: 15px 30px;
-        border: 2px solid #fff;
-        border-radius: 100px;
-        transition: all 0.25s ease;
-        &:hover {
-          background-color: #0c8baf;
-          border-color: #0c8baf;
+        display: flex;
+        p {
+          width: 60px;
+          padding: 10px 10px;
+          text-align: center;
+          span {
+            transition: all 0.25s ease;
+          }
+        }
+        .divider {
+          width: 1px;
+          margin-top: 10px;
+          height: 12px;
+          background-color: #dad8d8;
+          display: inline-block;
+          vertical-align: middle;
         }
       }
       .all {

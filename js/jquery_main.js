@@ -11,6 +11,17 @@ const view_box_Slider01 = new Swiper(".view_box", {
   },
 });
 
+const index_main_Slider = new Swiper("#mainVisual", {
+  autoplay: true,
+  speed: 1000,
+  effect: "fade",
+  loop: true,
+  navigation: {
+    prevEl: "#mainVisual .prev",
+    nextEl: "#mainVisual .next",
+  },
+});
+
 const brand_school_Slider = new Swiper("#mainVisual", {
   autoplay: true,
   speed: 1000,
@@ -32,29 +43,13 @@ const productSlider = new Swiper("#mainVisual .visual_box", {
   },
 });
 
-/*
-const gnbItem = document.querySelectorAll("#gnb .list > li");
-//document.querySelectorAll(찾는거) // 배열처럼 생긴 nodeList를 리턴한다.
-const header = document.querySelector("#header");
-console.log(gnbItem);
-console.log(gnbItem.length);
-for (let i = 0; i < gnbItem.length; i++) {
-  gnbItem[i].addEventListener("mouseenter", function () {
-    header.classList.add("open");
-  });
-  gnbItem[i].addEventListener("mouseleave", function () {
-    header.classList.remove("open");
-  });
-}
-*/
-
-gsap.from("#mainVisual .slogan .main .char", { opacity: 0, x: 150, ease: "power4", duration: 1, stagger: 0.1 });
-gsap.from("#mainVisual .slogan .sub .char", { opacity: 0, x: 150, ease: "power4", duration: 1, delay: 2, stagger: 0.02 });
+gsap.from("#mainVisual .slogan .main .char", { opacity: 0, x: 550, ease: "power4", duration: 1, stagger: 0.1 });
 
 const gnbList = $("#gnb .list > li");
 
 const header = $("#header");
 
+//gnb하단을 합치는 큰 배경 메뉴 설정
 /*
 // fulldown 메뉴
 gnbList.on("mouseenter", function () {
@@ -88,14 +83,6 @@ $(window).on("scroll", function () {
   }
 });
 
-//IIFE   변수를 하나의 영역으로 만들어서 충돌 방지...
-
-/*
-(function () {
-  console.log("나는 즉시실행함수입니다.");
-})();
-*/
-
 const tabBox = $(".tabBox");
 const tabMenu = tabBox.find(".tabMenu > ul > li");
 const tabContents = tabBox.find(".tabContents > ul > li");
@@ -109,15 +96,6 @@ tabMenu.on("click", function () {
   //method chaining
   //const siblings = $(this).siblings("li");
   //siblings.removeClass("on");
-});
-const lnbItem = $("#lnb .contents .item");
-lnbItem.on("mouseenter", function () {
-  const selectedUL = $(this).find("ul");
-  selectedUL.stop().slideDown(200);
-});
-lnbItem.on("mouseleave", function () {
-  const selectedUL = $(this).find("ul");
-  selectedUL.stop().slideUp(100);
 });
 
 const popup = $(".popup");
@@ -175,3 +153,63 @@ btnTop.on("click", function () {
   $(window).scrollTop(0);
   gsap.to("html,body", { scrollTop: 0, duration: 0.5 });
 });
+
+//브랜드 소개, 스와이프
+const introduceSlider = new Swiper(".introduce .mask", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    nextEl: ".introduce .next",
+    prevEl: ".introduce .prev",
+  },
+  pagination: {
+    el: ".introduce .pagination",
+    clickable: true,
+  },
+});
+
+//instagram 하트 색깔넣기
+//->이미지 바꾸는 기능수행 함수
+$(document).ready(function () {
+  /*웹페이지 열었을 때*/
+  $(".on").show();
+  $(".off").hide();
+
+  /*img1을 클릭했을 때 img2를 보여줌*/
+  $(".on").click(function () {
+    $(".on").hide();
+    $(".off").show();
+  });
+
+  /*img2를 클릭했을 때 img1을 보여줌*/
+  $(".off").click(function () {
+    $(".on").show();
+    $(".off").hide();
+  });
+});
+
+//확인
+(function ($) {
+  // DOM Ready
+  $(function () {
+    // Binding a click event
+    // From jQuery v.1.7.0 use .on() instead of .bind()
+    $("#my-button").bind("click", function (e) {
+      var self = $(this), //button
+        content = $(".content");
+      $("element_to_pop_up").bPopup({
+        onOpen: function () {
+          content.html(self.data("bpopup") || "");
+        },
+        onClose: function () {
+          content.empty();
+        },
+      });
+      // Prevents the default action to be triggered.
+      e.preventDefault();
+      // Triggering bPopup when click event is fired
+      $("#element_to_pop_up").bPopup();
+    });
+  });
+})(jQuery);
